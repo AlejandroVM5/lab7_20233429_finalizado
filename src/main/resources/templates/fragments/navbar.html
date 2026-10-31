@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<body>
+
+<!-- Fragmento reutilizable para el menu de navegacion -->
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d47a1;">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold" th:href="@{/}">Gestión Comercial</a>
+        <div class="navbar-nav d-flex flex-row gap-3">
+            <a class="nav-link text-white" th:href="@{/}">Inicio</a>
+            <a class="nav-link text-white" th:href="@{/customer}">Clientes</a>
+            <a class="nav-link text-white" th:href="@{/product}">Catálogo</a>
+            <a class="nav-link text-white" th:href="@{/invoice}">Pedidos</a>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
